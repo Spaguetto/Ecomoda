@@ -1,0 +1,147 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+input {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Estilos de páginas */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Estilos de la página de inicio de sesión */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -50px; /* Ajustamos para centrar verticalmente */
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%; /* Usamos el ancho completo del contenedor */
+  max-width: 400px; /* Establecemos un ancho máximo */
+  margin: 0 auto; /* Centramos horizontalmente */
+}
+
+.login.page .title {
+  font-size: 2rem; /* Equivalente al 200% original */
+}
+
+.login.page .usernameInput {
+  font-size: 2rem; /* Equivalente al 200% original */
+  letter-spacing: 3px;
+}
+
+.login.page .title,
+.login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Estilos de la página de chat */
+
+.chat.page {
+  display: none;
+}
+
+/* Estilos de fuente para los mensajes */
+
+.messages {
+  font-size: 1.5rem; /* Equivalente al 150% original */
+}
+
+.inputMessage {
+  font-size: 1rem; /* Equivalente al 100% original */
+}
+
+.log {
+  color: gray;
+  font-size: 0.7rem; /* Equivalente al 70% original */
+  margin: 5px;
+  text-align: center;
+}
+
+/* Estilos de la sección de mensajes */
+
+.chatArea {
+  height: calc(100% - 60px); /* Restamos la altura del área de entrada */
+  padding-bottom: 60px;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px 20px;
+}
+
+.message.typing .messageBody {
+  color: gray;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Estilos de la entrada de mensajes */
+
+.inputMessage {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
