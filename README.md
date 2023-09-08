@@ -1,22 +1,22 @@
 
-# Socket.IO Chat
+# Chat de Socket.IO
 
-A simple chat demo for Socket.IO
+Una demostración de chat simple para Socket.IO
 
-## How to use
+## Cómo usar
+
 
 ```
 $ npm i
 $ npm start
 ```
-
-And point your browser to `http://localhost:3000`. Optionally, specify
-a port by supplying the `PORT` env variable.
+Y dirige tu navegador a http://localhost:3000. Opcionalmente, puedes especificar
+un puerto proporcionando la variable de entorno PORT.
 
 ## Features
 
-- Multiple users can join a chat room by each entering a unique username
-on website load.
-- Users can type chat messages to the chat room.
-- A notification is sent to all users when a user joins or leaves
-the chatroom.
+-Varios usuarios pueden unirse a una sala de chat ingresando un nombre de usuario único
+al cargar el sitio web.
+-Los usuarios pueden escribir mensajes de chat en la sala de chat.
+-Se envía una notificación a todos los usuarios cuando un usuario se une o abandona
+la sala de chat.
