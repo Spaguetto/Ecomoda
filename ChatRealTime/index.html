@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat en Tiempo Real</title>
+</head>
+<body>
+  <ul id="messages"></ul>
+  <input id="input" autocomplete="off" /><button onclick="sendMessage()">Enviar</button>  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+	const socket = io();
+
+    socket.on('chat message', (msg) => {
+      $('#messages').append($('<li>').text(msg));
+    });
+
+    function sendMessage() {
+      const message = $('#input').val();
+      socket.emit('chat message', message);
+      $('#input').val('');
+    }	
+  </script>
+</body>
+</html>
